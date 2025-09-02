@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Stopwatch - Professional Time Tracking</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="app-title">
+                <i class="fas fa-stopwatch"></i>
+                My_Stopwatch
+            </h1>
+            <p class="app-subtitle">Professional time tracking with millisecond precision</p>
+        </header>
+
+        <!-- Main Stopwatch Section -->
+        <main class="stopwatch-container">
+            <!-- Time Display -->
+            <div class="time-display">
+                <div class="time-digits" id="timeDisplay">
+                    <span class="hours">00</span>:
+                    <span class="minutes">00</span>:
+                    <span class="seconds">00</span>:
+                    <span class="milliseconds">00</span>
+                </div>
+            </div>
+
+            <!-- Control Buttons -->
+            <div class="control-buttons">
+                <button class="btn start-btn" id="startBtn">
+                    <i class="fas fa-play"></i>
+                    Start
+                </button>
+                <button class="btn stop-btn" id="stopBtn" disabled>
+                    <i class="fas fa-pause"></i>
+                    Stop
+                </button>
+                <button class="btn reset-btn" id="resetBtn">
+                    <i class="fas fa-redo"></i>
+                    Reset
+                </button>
+                <button class="btn lap-btn" id="lapBtn" disabled>
+                    <i class="fas fa-flag"></i>
+                    Lap
+                </button>
+            </div>
+
+            <!-- Lap Times -->
+            <div class="laps-container">
+                <h3 class="laps-title">
+                    <i class="fas fa-list"></i>
+                    Lap Times
+                </h3>
+                <div class="laps-list" id="lapsList">
+                    <!-- Lap times will be added here by JavaScript -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 My_Stopwatch. Built with <i class="fas fa-heart"></i></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
